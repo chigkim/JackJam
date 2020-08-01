@@ -35,6 +35,7 @@ Then hopefully you can run the app with right click and choose open.
 ### Server tab
 * If you're running as a server, you need to create a port forwardding for 4464 on your router.
 * Choose your input, output, sampling rate, and buffer size
+* Make sure both client and server use the same sampling rate and buffer size
 * Go to the tool bar and check start engine
 * Choose Jacktrip type:
 * Type the address if it's client
