@@ -418,13 +418,13 @@ def stop():
 def connect():
 	type = frame.serverPanel.types[frame.serverPanel.typeChoice.GetSelection()]
 	if type == 'Client':
-		cmd = '/usr/local/bin/jacktrip -c '+frame.serverPanel.address.GetValue()
+		cmd = '/usr/local/bin/jacktrip -z -c '+frame.serverPanel.address.GetValue()
 	elif type == 'Hub Client':
-		cmd = '/usr/local/bin/jacktrip -C '+frame.serverPanel.address.GetValue()
+		cmd = '/usr/local/bin/jacktrip -z -C '+frame.serverPanel.address.GetValue()
 	elif type == 'Server':
-		cmd = '/usr/local/bin/jacktrip -s'
+		cmd = '/usr/local/bin/jacktrip -z -s'
 	elif type == 'Hub Server':
-		cmd = '/usr/local/bin/jacktrip -S'
+		cmd = '/usr/local/bin/jacktrip -z  -S'
 	jacktrip.start(cmd)
 
 def disconnect():
